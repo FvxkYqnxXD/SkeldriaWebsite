@@ -2,20 +2,22 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introducción
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Bienvenido al sitio oficial de SkeldriaX.
 
-## Getting Started
+## Recursos
 
-Get started by **creating a new site**.
+SkeldriaX tiene diversos recursos de minecraft y discord.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Contamos con 3 plugins de minecraft y con 2 bots de discord open-source.
 
-### What you'll need
+### Minecraft
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- SkeldriaMOTD:
+  - SkeldriaMOTD es un plugin medio de MOTD para tu servidor proxy de minecraft, cuenta con doble linea, soporte HEX/RGB y mas.
+- SkeldriaSB
+  - SkeldriaSB es un plugin de scoreboard avanzado que sigue en desarollo, contara con soporte HEX/RGB, PlaceholderAPI y más.
 
 ## Generate a new site
 
