@@ -13,14 +13,20 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          <span className={styles.logoWrapper}>
+            <img
+              src="/img/SkeldriaX.png"
+              alt="SkeldriaX Logo"
+              className={styles.logo}
+            />
+          </span>
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            INTROCUCCIÓN
+            INTRODUCCIÓN
           </Link>
         </div>
       </div>

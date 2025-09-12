@@ -13,7 +13,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'SkeldriaX',
   tagline: 'Bienvenido a la documentación oficial de SkeldriaX, aquí encontraras toda la información de SkeldriaX',
-  favicon: 'img/favicon.png',
+  favicon: 'img/SkeldriaX.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -85,7 +85,7 @@ const config = {
         title: 'SkeldriaX',
         logo: {
           alt: 'SkeldriaLogo',
-          src: 'img/logo.png',
+          src: 'img/SkeldriaX.png',
         },
         items: [
           {

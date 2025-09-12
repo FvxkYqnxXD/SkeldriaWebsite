@@ -21,3 +21,47 @@
   align-items: center;
   justify-content: center;
 }
+
+.logoWrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* para que el fondo no se salga */
+  border-radius: 20px; /* opcional: redondea bordes */
+}
+
+/* Fondo borroso */
+.logoWrapper::before {
+  content: "";
+  position: absolute;
+  top: -20px;   /* se expande un poco más que el logo */
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url("/img/background.jpg") center/cover no-repeat;
+  filter: blur(15px); /* desenfoque */
+  z-index: 0; /* queda detrás */
+}
+
+/* Logo en frente */
+.logo {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animación hover ya definida */
+.logo:hover {
+  animation: pulseSize 0.6s infinite alternate;
+}
+
+@keyframes pulseSize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
