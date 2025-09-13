@@ -19,7 +19,9 @@ function HomepageHeader() {
             className={styles.logo}
           />
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={clsx('hero__subtitle', styles.subtitle)}>
+          {siteConfig.tagline}
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -37,7 +39,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Página oficial de SkeldriaX, plugins y documentación">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
