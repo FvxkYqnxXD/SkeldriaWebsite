@@ -1,12 +1,16 @@
+/* Hero con imagen de fondo y capas controladas */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
   background: url("/img/background.jpg") center/cover no-repeat;
+
+  /* Aísla el stacking para que z-index funcione igual en móvil */
+  isolation: isolate;
 }
 
-/* Fondo borroso */
+/* Capa borrosa (detrás) */
 .heroBanner::before {
   content: "";
   position: absolute;
@@ -15,78 +19,84 @@
   filter: blur(12px);
   transform: scale(1.1);
   z-index: 0;
+  pointer-events: none; /* no bloquea taps */
 }
 
-/* Overlay oscuro */
+/* Overlay oscuro (encima del blur, debajo del contenido) */
 .heroBanner::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
   z-index: 1;
+  pointer-events: none; /* no bloquea taps */
 }
 
-/* Contenido principal (siempre arriba) */
+/* Contenido siempre encima */
 .heroBanner .container {
   position: relative;
   z-index: 2;
   text-align: center;
 }
 
-/* Botón */
-.heroBanner .button {
-  position: relative;
-  z-index: 2; /* arriba del overlay */
-  color: #fff !important;
-  border: 2px solid #fff !important;
-  background: transparent !important;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover del botón */
-.heroBanner .button:hover {
-  background: #fff !important;
-  color: #000 !important;
-  transform: scale(1.05);
-}
-
 /* Logo */
 .logo {
   max-width: 250px;
   height: auto;
-  transition: transform 0.3s ease-in-out;
   display: block;
   margin: 0 auto 1rem;
-  z-index: 2;
-  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Animación hover del logo */
 .logo:hover {
   animation: pulseSize 0.6s infinite alternate;
 }
 
-/* Subtítulo / descripción */
+@keyframes pulseSize {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Subtítulo/Descripción: forzamos visibilidad */
 .subtitle {
   color: #ffffff !important;
   font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 1rem;
-  position: relative;
-  z-index: 2;
+  margin-top: 0.5rem;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* Botón */
-.heroBanner .button {
+/* Contenedor del botón con z-index alto */
+.buttons {
   position: relative;
   z-index: 2;
+  margin-top: 1rem;
 }
 
-@keyframes pulseSize {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
+/* Forzamos estilos del botón del tema usando :global */
+.buttons :global(.button) {
+  position: relative;
+  z-index: 2; /* encima del overlay */
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover/Focus accesible y visible sobre fondo */
+.buttons :global(.button:hover),
+.buttons :global(.button:focus) {
+  background: #fff !important;
+  color: #000 !important;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  text-decoration: none;
+}
+
+/* Ajustes móviles */
+@media (max-width: 480px) {
+  .logo { max-width: 220px; }
+  .subtitle { font-size: 1.05rem; }
 }
