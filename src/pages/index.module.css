@@ -33,6 +33,23 @@
   text-align: center;
 }
 
+/* Botón */
+.heroBanner .button {
+  position: relative;
+  z-index: 2; /* arriba del overlay */
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  background: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover del botón */
+.heroBanner .button:hover {
+  background: #fff !important;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
 /* Logo */
 .logo {
   max-width: 250px;
