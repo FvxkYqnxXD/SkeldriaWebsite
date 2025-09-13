@@ -30,7 +30,7 @@
 .heroBanner .container {
   position: relative;
   z-index: 999; /* FORZAMOS estar por encima en móviles */
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
