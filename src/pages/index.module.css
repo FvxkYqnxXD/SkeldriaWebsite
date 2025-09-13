@@ -34,6 +34,17 @@
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
+/* Descripción (tagline) */
+.hero__subtitle {
+  color: #ffffff !important; /* fuerza blanco */
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 3; /* asegura estar arriba del overlay */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); /* contraste sobre fondo */
+}
+
 /* Logo */
 .logo {
   max-width: 250px;
