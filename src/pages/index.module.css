@@ -14,7 +14,7 @@
   background: inherit;
   filter: blur(12px);
   transform: scale(1.1);
-  z-index: 0; /* atrás */
+  z-index: 0; /* siempre atrás */
 }
 
 /* Overlay oscuro */
@@ -23,26 +23,15 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* encima del blur, pero debajo del contenido */
+  z-index: 1; /* detrás del contenido */
 }
 
-/* Contenido: SIEMPRE arriba */
+/* Contenido principal */
 .heroBanner .container {
   position: relative;
-  z-index: 2; /* encima del blur y overlay */
+  z-index: 999; /* FORZAMOS estar por encima en móviles */
   color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-}
-
-/* Descripción (tagline) */
-.hero__subtitle {
-  color: #ffffff !important; /* fuerza blanco */
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  position: relative;
-  z-index: 3; /* asegura estar arriba del overlay */
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); /* contraste sobre fondo */
+  text-align: center;
 }
 
 /* Logo */
@@ -51,13 +40,30 @@
   height: auto;
   transition: transform 0.3s ease-in-out;
   display: block;
-  margin: 0 auto 1rem; /* centrado con margen inferior */
+  margin: 0 auto 1rem;
+  z-index: 999;
   position: relative;
-  z-index: 2; /* explícito para estar encima */
 }
 
 .logo:hover {
   animation: pulseSize 0.6s infinite alternate;
+}
+
+/* Tagline (descripción) */
+.hero__subtitle {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 999; /* aseguramos que esté encima del overlay */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Botón */
+.heroBanner .button {
+  position: relative;
+  z-index: 999;
 }
 
 @keyframes pulseSize {
