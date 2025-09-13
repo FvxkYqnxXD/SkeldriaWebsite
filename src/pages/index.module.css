@@ -1,16 +1,13 @@
-/* Hero con imagen de fondo y capas controladas */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
   background: url("/img/background.jpg") center/cover no-repeat;
-
-  /* Aísla el stacking para que z-index funcione igual en móvil */
-  isolation: isolate;
+  isolation: isolate; /* asegura stacking limpio */
 }
 
-/* Capa borrosa (detrás) */
+/* Fondo borroso siempre al fondo */
 .heroBanner::before {
   content: "";
   position: absolute;
@@ -18,24 +15,22 @@
   background: inherit;
   filter: blur(12px);
   transform: scale(1.1);
-  z-index: 0;
-  pointer-events: none; /* no bloquea taps */
+  z-index: -2; /* al fondo */
 }
 
-/* Overlay oscuro (encima del blur, debajo del contenido) */
+/* Overlay oscuro también detrás */
 .heroBanner::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
-  z-index: 1;
-  pointer-events: none; /* no bloquea taps */
+  z-index: -1; /* detrás del contenido, encima del blur */
 }
 
-/* Contenido siempre encima */
+/* Contenido: por encima de todo */
 .heroBanner .container {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   text-align: center;
 }
 
@@ -46,9 +41,10 @@
   display: block;
   margin: 0 auto 1rem;
   transition: transform 0.3s ease-in-out;
+  z-index: 10;
+  position: relative;
 }
 
-/* Animación hover del logo */
 .logo:hover {
   animation: pulseSize 0.6s infinite alternate;
 }
@@ -58,34 +54,32 @@
   100% { transform: scale(1.1); }
 }
 
-/* Subtítulo/Descripción: forzamos visibilidad */
+/* Subtítulo/Descripción */
 .subtitle {
   color: #ffffff !important;
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 0.5rem;
+  position: relative;
+  z-index: 10;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* Contenedor del botón con z-index alto */
+/* Botones */
 .buttons {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   margin-top: 1rem;
 }
 
-/* Forzamos estilos del botón del tema usando :global */
 .buttons :global(.button) {
-  position: relative;
-  z-index: 2; /* encima del overlay */
   color: #fff !important;
   border: 2px solid #fff !important;
   background: transparent !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
-/* Hover/Focus accesible y visible sobre fondo */
 .buttons :global(.button:hover),
 .buttons :global(.button:focus) {
   background: #fff !important;
