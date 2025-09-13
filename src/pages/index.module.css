@@ -6,7 +6,7 @@
   background: url("/img/background.jpg") center/cover no-repeat;
 }
 
-/* Capa borrosa */
+/* Fondo borroso */
 .heroBanner::before {
   content: "";
   position: absolute;
@@ -14,31 +14,35 @@
   background: inherit;
   filter: blur(12px);
   transform: scale(1.1);
-  z-index: 0;
+  z-index: 0; /* atrás */
 }
 
-/* Overlay oscuro semitransparente encima del blur */
+/* Overlay oscuro */
 .heroBanner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* 50% negro */
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* encima del blur, pero debajo del contenido */
 }
 
-/* Contenido encima de todo */
+/* Contenido: SIEMPRE arriba */
 .heroBanner .container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* encima del blur y overlay */
   color: #fff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Logo */
 .logo {
-  max-width: 250px; /* ajustado para móvil */
+  max-width: 250px;
   height: auto;
   transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto 1rem; /* centrado con margen inferior */
+  position: relative;
+  z-index: 2; /* explícito para estar encima */
 }
 
 .logo:hover {
