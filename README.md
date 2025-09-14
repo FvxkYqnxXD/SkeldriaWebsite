@@ -28,3 +28,16 @@ Iniciar con PM2:
 
 Iniciar producción:
 ```pm2 startup && pm2 save```
+
+## Inicio automatico`
+
+Curl:
+```
+bash <(curl -s https://raw.githubusercontent.com/SkeldriaX/SkeldriaWebsite/main/setup.sh)
+```
+
+Wget:
+```
+bash <(wget -qO- https://raw.githubusercontent.com/SkeldriaX/SkeldriaWebsite/main/setup.sh)
+
+```
