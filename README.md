@@ -5,6 +5,6 @@ Sitio web oficial de SkeldriaX
 
 # Recursos
 
-En este momento SkeldriaX esta construyendo SkeldriaMOTD y tiene disponible los bots [![SkeldriaBot](https://img.shields.io/github/license/SkeldriaX/SkeldriaBot)] y [![SkeldriaSecurity](https://img.shields.io/github/license/SkeldriaX/SkeldriaSecurity)]
+En este momento SkeldriaX esta construyendo SkeldriaMOTD y tiene disponible los bots [![SkeldriaBot](https://img.shields.io/github/SkeldriaX/SkeldriaBot)] y [![SkeldriaSecurity](https://img.shields.io/github/SkeldriaX/SkeldriaSecurity)]
 
 
