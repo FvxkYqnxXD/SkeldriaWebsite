@@ -115,24 +115,24 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Comprar',
+                href: 'https://builtbybit.com/FvxkYqnx/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.skeldriax.dev',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Partners',
+                href: 'https://skeldriax.dev/partners',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Más',
             items: [
               {
                 label: 'Recursos',
