@@ -95,6 +95,7 @@ const config = {
             label: 'WIKI',
           },
 	  {to: '/recursos', label: 'Recursos', position: 'left'},
+	  {to: '/install', label: 'Instalación', position: 'left'},
           {
             href: 'https://github.com/SkeldriaX/SkeldriaWebsite',
             label: 'GitHub',
