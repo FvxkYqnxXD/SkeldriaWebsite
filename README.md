@@ -29,7 +29,7 @@ Iniciar con PM2:
 Iniciar producción:
 ```pm2 startup && pm2 save```
 
-## Inicio automatico`
+## Inicio automatico
 
 Curl:
 ```
