@@ -4,46 +4,46 @@ sidebar_position: 1
 
 # Introducción
 
-Bienvenido al sitio oficial de SkeldriaX.
+Bienvenido al sitio oficial de **SkeldriaX**, un proyecto dedicado a ofrecer herramientas útiles y personalizadas para servidores de Minecraft y comunidades de Discord.
 
 ## Recursos
 
-SkeldriaX tiene diversos recursos de minecraft y discord.
+SkeldriaX cuenta con una colección de recursos open-source diseñados para mejorar la experiencia de juego y gestión. Actualmente ofrecemos:
 
-Contamos con 3 plugins de minecraft y con 2 bots de discord open-source.
+- 🧩 **3 plugins de Minecraft**
+- 🤖 **2 bots de Discord**
 
-### Minecraft
+Todos nuestros desarrollos están disponibles en GitHub bajo licencias abiertas, fomentando la colaboración y el aprendizaje.
 
-- SkeldriaMOTD:
-  - SkeldriaMOTD es un plugin medio de MOTD para tu servidor proxy de minecraft, cuenta con doble linea, soporte HEX/RGB y mas.
-- SkeldriaSB
-  - SkeldriaSB es un plugin de scoreboard avanzado que sigue en desarollo, contara con soporte HEX/RGB, PlaceholderAPI y más.
+### 🛠️ Plugins de Minecraft
 
-## Generate a new site
+- **SkeldriaMOTD**  
+  Plugin ligero para servidores proxy que permite personalizar el mensaje del día (MOTD). Soporta doble línea, colores HEX/RGB, y es compatible con la mayoría de proxies como Velocity y BungeeCord.
 
-Generate a new Docusaurus site using the **classic template**.
+- **SkeldriaSB**  
+  Plugin avanzado de scoreboard en desarrollo. Planea incluir soporte para HEX/RGB, integración con PlaceholderAPI, animaciones y múltiples layouts configurables.
 
-The classic template will automatically be added to your project after you run the command:
+- **SkeldriaTP** *(Próximamente)*  
+  Sistema de teletransporte personalizado con soporte para cooldowns, permisos, y mensajes configurables. Ideal para servidores survival o RPG.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### 🤖 Bots de Discord
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- **SkeldriaBot**  
+  Bot multifunción para moderación, gestión de roles, comandos personalizados y eventos automáticos. Incluye panel web para configuración avanzada.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- **SkeldriaSecurity**  
+  Bot de seguridad con filtros por acciones y sanciones personalizadas.
 
-## Start your site
+## 🚀 Comunidad y Contribuciones
 
-Run the development server:
+Todos los recursos están en constante evolución. Agradecemos los reportes de errores, sugerencias y pull requests. Puedes unirte a nuestra comunidad en Discord para recibir soporte, compartir ideas o colaborar en el desarrollo.
 
-```bash
-cd my-website
-npm run start
-```
+## 📫 Contacto
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+- GitHub: [github.com/SkeldriaX](https://github.com/SkeldriaX)
+- Discord: [discord.gg/skeldriax](https://discord.gg/skeldriax)
+- Email: skeldriax@francodev.fun
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+---
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Gracias por formar parte de SkeldriaX. ¡Tu creatividad y curiosidad hacen que este proyecto siga creciendo!
