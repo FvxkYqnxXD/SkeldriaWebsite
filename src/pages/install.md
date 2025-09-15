@@ -1,40 +1,68 @@
-# SkeldriaWebsite
-Sitio web oficial de SkeldriaX
+# 🌐 SkeldriaWebsite  
+Repositorio oficial del sitio web de **SkeldriaX**
 
 [![Licencia](https://img.shields.io/github/license/SkeldriaX/SkeldriaWebsite)](https://github.com/SkeldriaX/SkeldriaWebsite/blob/main/LICENSE)
 
-# Recursos
+---
 
-En este momento SkeldriaX esta construyendo SkeldriaMOTD y tiene disponible los bots [SkeldriaBot](https://github.com/SkeldriaX/SkeldriaBot) y [SkeldriaSecurity](https://github.com/SkeldriaX/SkeldriaSecurity)
+## 🚀 ¿Qué es SkeldriaWebsite?
 
-# SkeldriaWebsite
-Este repositorio de github contiene el codigo original del sitio web oficial de SkeldriaX
+Este repositorio contiene el código fuente del sitio web oficial de SkeldriaX. Puedes usarlo como plantilla para tus propios proyectos o contribuir al desarrollo del ecosistema Skeldria.
 
-## Usalo como plantilla
+---
 
-Copialo:
-```git clone https://github.com/SkeldriaX/SkeldriaWebsite```
+## 🧰 Recursos disponibles
 
-Instalar:
-```npm install && npm tun build```
+Actualmente, SkeldriaX está desarrollando **SkeldriaMOTD** y ya cuenta con los siguientes bots activos:
 
-Iniciar:
-```npm run serve```
+- 🤖 [SkeldriaBot](https://github.com/SkeldriaX/SkeldriaBot)  
+- 🔐 [SkeldriaSecurity](https://github.com/SkeldriaX/SkeldriaSecurity)
 
-## PM2
+---
 
-Iniciar con PM2:
-```pm2 start npm --name "SkeldriaX" -- run serve```
+## 📦 Instalación rápida
 
-Iniciar producción:
-```pm2 startup && pm2 save```
-
-## Inicio automatico
-
-Curl:
+### Clona el repositorio:
+```bash
+git clone https://github.com/SkeldriaX/SkeldriaWebsite
 ```
+
+### Instala dependencias:
+```bash
+npm install && npm run build
+```
+
+### Inicia el servidor local:
+```bash
+npm run serve
+```
+
+---
+
+## ⚙️ Ejecutar con PM2
+
+Para mantener el sitio activo en segundo plano:
+
+```bash
+pm2 start npm --name "SkeldriaX" -- run serve
+```
+
+### Configurar inicio automático en producción:
+```bash
+pm2 startup
+pm2 save
+```
+
+---
+
+## 🌀 Instalación automatizada
+
+Puedes iniciar todo con un solo comando usando `curl`:
+
+```bash
 bash <(curl -s https://raw.githubusercontent.com/SkeldriaX/SkeldriaWebsite/main/setup.sh)
 ```
+
 
 Wget:
 ```
