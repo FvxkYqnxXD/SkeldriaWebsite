@@ -1,5 +1,6 @@
 ---
 id: skeldriasecurity
+sidebar_position: 1
 title: SkeldriaSecurity
 sidebar_label: SkeldriaSecurity
 description: Bot de seguridad para servidores Discord con protección avanzada contra raids, spam y usuarios maliciosos.
