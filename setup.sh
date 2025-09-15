@@ -1,6 +1,7 @@
 #!/bin/bash
 # Script de instalación y despliegue con PM2 para SkeldriaXWebsite
-# Uso: bash setup.sh
+# Soporte: fvxkyqnx@francodev.fun
+# https://francodev.fun
 
 # Preguntar nombre para el proceso en PM2
 read -p "👉 Ingresa el nombre que deseas asignar al servidor en PM2: " APP_NAME
@@ -34,4 +35,5 @@ echo "   pm2 logs $APP_NAME  # ver logs del servidor"
 echo "   pm2 stop $APP_NAME  # detener el servidor"
 echo "   pm2 restart $APP_NAME  # reiniciar el servidor"
 echo "   Script por: https://github.com/FvxkYqnxXD"
+echo "   Contacto/Soporte: skeldriax.francodev.fun"
 echo "   Donaciones para SkeldriaX: https://skeldriax.dev/donaciones/"
