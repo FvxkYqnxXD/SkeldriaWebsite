@@ -66,6 +66,6 @@ echo "   pm2 stop $APP_NAME    # Detener el servidor"
 echo "   pm2 restart $APP_NAME # Reiniciar el servidor"
 
 echo -e "\n🔗 ${CYAN}Script por:${NC} https://github.com/FvxkYqnxXD"
-echo -e "📬 ${CYAN}Contacto/Soporte:${NC} ${SUPMAIL}"
+echo -e "📬 ${CYAN}Contacto/Soporte:${NC} skeldriax@francodev.fun"
 echo -e "💖 ${CYAN}Donaciones:${NC} https://skeldriax.dev/donaciones/"
 
