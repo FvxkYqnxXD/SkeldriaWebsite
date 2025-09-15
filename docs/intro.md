@@ -17,10 +17,10 @@ Todos nuestros desarrollos están disponibles en GitHub bajo licencias abiertas,
 
 ### 🛠️ Plugins de Minecraft
 
-- **SkeldriaMOTD**  
+- **SkeldriaMOTD**  (En proceso)
   Plugin ligero para servidores proxy que permite personalizar el mensaje del día (MOTD). Soporta doble línea, colores HEX/RGB, y es compatible con la mayoría de proxies como Velocity y BungeeCord.
 
-- **SkeldriaSB**  
+- **SkeldriaSB**  (En proceso)
   Plugin avanzado de scoreboard en desarrollo. Planea incluir soporte para HEX/RGB, integración con PlaceholderAPI, animaciones y múltiples layouts configurables.
 
 - **SkeldriaTP** *(Próximamente)*  
