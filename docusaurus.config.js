@@ -52,7 +52,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/SkeldriaX/SkeldriaWebsite/',
+            'https://github.com/SkeldriaX/SkeldriaWebsite/tree/main',
         },
         blog: {
           showReadingTime: true,
