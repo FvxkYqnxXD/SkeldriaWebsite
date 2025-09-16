@@ -1,6 +1,6 @@
-## 📥 Clonar y ejecutar RorySecurity en tu VPS
+## 📥 SkeldriaSecurity Open-Source
 
-Sigue estos pasos para instalar RorySecurity en tu servidor Linux (Ubuntu recomendado):
+Sigue estos pasos para instalar SkeldriaSecurity en tu servidor Linux (Ubuntu recomendado):
 
 ### 1. Clona el repositorio
 
