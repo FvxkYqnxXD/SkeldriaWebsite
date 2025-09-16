@@ -39,7 +39,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es', 'en'],
   },
 
   presets: [
@@ -94,7 +94,6 @@ const config = {
             position: 'left',
             label: 'WIKI',
           },
-	  {to: '/recursos', label: 'Recursos', position: 'left'},
 	  {to: '/install', label: 'Instalación', position: 'left'},
           {
             href: 'https://github.com/SkeldriaX/SkeldriaWebsite',
@@ -136,8 +135,8 @@ const config = {
             title: 'Más',
             items: [
               {
-                label: 'Recursos',
-                to: '/recursos',
+                label: 'Instalación',
+                to: '/install',
               },
               {
                 label: 'GitHub',
