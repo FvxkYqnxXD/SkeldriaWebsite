@@ -95,6 +95,7 @@ const config = {
             label: 'WIKI',
           },
 	  {to: '/install', label: 'Instalación', position: 'left'},
+	  {to: '/securitybot', label: 'SkeldriaSecurity', position: 'left'},
           {
             href: 'https://github.com/SkeldriaX/SkeldriaWebsite',
             label: 'GitHub',
