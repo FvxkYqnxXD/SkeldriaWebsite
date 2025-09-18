@@ -60,12 +60,12 @@ pm2 save
 Puedes iniciar todo con un solo comando usando `curl`:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/SkeldriaX/SkeldriaWebsite/main/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/SkeldriaX/install/refs/heads/main/skeldriawebsite.sh)
 ```
 
 
 Wget:
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/SkeldriaX/SkeldriaWebsite/main/setup.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/SkeldriaX/install/refs/heads/main/skeldriawebsite.sh)
 
 ```
