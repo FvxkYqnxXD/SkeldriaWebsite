@@ -130,9 +130,6 @@ const config = {
                 label: 'Partners',
                 href: 'https://skeldriax.dev/partners',
               },
-			  {
-				  type: 'localeDropdown'
-			  }
             ],
           },
           {
