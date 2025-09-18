@@ -5,7 +5,6 @@
   overflow: hidden;
   background: url("/img/background.jpg") center/cover no-repeat;
   isolation: isolate; /* asegura stacking limpio */
-  size: 90px;
 }
 
 /* Fondo borroso siempre al fondo */
