@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🛡️ SkeldriaSecurity
+# SkeldriaSecurity
 
 **SkeldriaSecurity** es un bot de seguridad para servidores de Discord, diseñado para proteger comunidades de ataques, abusos y comportamientos maliciosos. Es completamente **Open Source** y está construido sobre **Discord.js v14**, lo que lo hace altamente personalizable y fácil de integrar.
 
