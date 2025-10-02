@@ -65,13 +65,7 @@ const config = {
         src: 'img/SkeldriaX.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'WIKI',
-          className: 'navbar-icon wiki-icon',
-        },
+        {to: '/docs/intro', label: 'Wiki', position: 'left', className: 'navbar-icon wiki-icon'},
         {to: '/install', label: 'Instalación', position: 'left', className: 'navbar-icon install-icon'},
         {to: '/securitybot', label: 'SkeldriaSecurity', position: 'left', className: 'navbar-icon security-icon'},
         {
