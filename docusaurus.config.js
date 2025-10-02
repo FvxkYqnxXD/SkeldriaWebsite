@@ -100,11 +100,13 @@ const config = {
             href: 'https://github.com/SkeldriaX/SkeldriaWebsite',
             label: 'GitHub',
             position: 'right',
+			'aria-label': 'Github',
           },
 		  {
 			href: 'https://discord.skledirax.dev',
 			label: 'Discord',
 			position: 'right',
+			'aria-label': 'Discord',
 		  },
         ],
       },
