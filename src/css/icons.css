@@ -20,6 +20,16 @@
   content: '\f099'; /* fa-twitter */
 }
 
+.discord-icon::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  font-size: 20px;
+  content: '\f392'; /* fa-discord */
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Ícono de Discord */
 .discord-icon::before {
   content: '\f392'; /* fa-discord */
