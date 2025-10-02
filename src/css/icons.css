@@ -1,0 +1,46 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Estilo base para ítems con íconos en el navbar */
+.navbar-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ícono de GitHub */
+.github-icon::before {
+  content: '\f09b'; /* fa-github */
+}
+
+/* Ícono de Twitter */
+.twitter-icon::before {
+  content: '\f099'; /* fa-twitter */
+}
+
+/* Ícono de Discord */
+.discord-icon::before {
+  content: '\f392'; /* fa-discord */
+}
+
+/* Ícono de documentación */
+.book-icon::before {
+  content: '\f02d'; /* fa-book */
+}
+
+/* Ícono de home */
+.home-icon::before {
+  content: '\f015'; /* fa-home */
+}
+
+/* Ícono de ajustes */
+.cog-icon::before {
+  content: '\f013'; /* fa-cog */
+}
+
+/* Ícono de usuario */
+.user-icon::before {
+  content: '\f007'; /* fa-user */
+}
