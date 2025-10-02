@@ -1,6 +1,5 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
-/* Estilo base para ítems con íconos en el navbar */
 .navbar-icon::before {
   font-size: 20px;
   margin-right: 8px;
@@ -8,36 +7,34 @@
   vertical-align: middle;
 }
 
-/* Ícono de GitHub (FontAwesome Brands) */
+/* Íconos del lado izquierdo */
+.wiki-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f02d'; /* fa-book */
+}
+
+.install-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0ad'; /* fa-wrench */
+}
+
+.security-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f3ed'; /* fa-shield-alt */
+}
+
+/* Íconos del lado derecho */
 .github-icon::before {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
   content: '\f09b'; /* fa-github */
 }
 
-/* Ícono de Discord (FontAwesome Brands) */
 .discord-icon::before {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
   content: '\f392'; /* fa-discord */
 }
-
-/* Ejemplos adicionales que puedes usar si quieres expandir */
-.twitter-icon::before {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-  content: '\f099'; /* fa-twitter */
-}
-
-.book-icon::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f02d'; /* fa-book */
-}
-
-.home-icon::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f015'; /* fa-home */
-}
-
