@@ -98,14 +98,14 @@ const config = {
 	  {to: '/securitybot', label: 'SkeldriaSecurity', position: 'left'},
           {
             href: 'https://github.com/SkeldriaX/SkeldriaWebsite',
-            label: 'GitHub',
             position: 'right',
+			className: 'navbar-icon github-icon',
 			'aria-label': 'Github',
           },
 		  {
 			href: 'https://discord.skledirax.dev',
-			label: 'Discord',
 			position: 'right',
+			className: 'navbar-icon discord-icon',
 			'aria-label': 'Discord',
 		  },
         ],
