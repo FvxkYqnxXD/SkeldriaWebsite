@@ -38,3 +38,9 @@
   font-weight: 400;
   content: '\f392'; /* fa-discord */
 }
+
+.discord-icon::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  content: '\f392'; /* fa-discord */
+}
