@@ -42,7 +42,7 @@ Puedes unirte a nuestra comunidad en Discord para recibir soporte, compartir ide
 ## 📫 Contacto
 
 - GitHub: [github.com/SkeldriaX](https://github.com/SkeldriaX)  
-- Discord: [discord.gg/skeldriax](https://discord.gg/skeldriax)  
+- Discord: [discord.gg/skeldriax](https://discord.skeldriax.dev)  
 - Email: skeldriax@francodev.fun  
 
 ---
