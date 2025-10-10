@@ -1,42 +1,53 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-<script src="https://kit.fontawesome.com/8f172169c5.js" crossorigin="anonymous"></script>
+import { FaGamepad, FaDiscord, FaPatreon } from 'react-icons/fa';
 
 const FeatureList = [
   {
-    title: 'Plugins de Minecraft <i class="fa-solid fa-gamepad"></i>',
+    title: (
+      <>
+        Plugins de Minecraft <FaGamepad />
+      </>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        SkeldriaX cuenta con plugins de minecraft, en epecial contamos con 3 plugins en trabajo
-	los cuales son SkeldriaMOTD, SkeldriaSB y SkeldriaTAB. 
+        SkeldriaX cuenta con plugins de Minecraft. En especial contamos con 3 plugins en desarrollo:
+        SkeldriaMOTD, SkeldriaSB y SkeldriaTAB.
       </>
     ),
   },
   {
-    title: 'Bots de Discord <i class="fa-brands fa-discord"></i>',
+    title: (
+      <>
+        Bots de Discord <FaDiscord />
+      </>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        SkeldriaX tambien cuenta con 2 bots de discord, en especial contamos con SkeldriaBot
-	y con SkeldriaSecurity.
+        SkeldriaX también cuenta con 2 bots de Discord: SkeldriaBot y SkeldriaSecurity.
       </>
     ),
   },
   {
-    title: 'Patrocinios <i class="fa-brands fa-patreon"></i>',
+    title: (
+      <>
+        Patrocinios <FaPatreon />
+      </>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        De momento no tenemos patrocinadores, si te gustaría aparecer aquí y patrocinar el projecto
-	puedes ir a la pagina de patrocinios en el menu superior. 
+        De momento no tenemos patrocinadores. Si te gustaría aparecer aquí y patrocinar el proyecto,
+        puedes visitar la página de patrocinios en el menú superior.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -63,3 +74,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
