@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         SkeldriaX cuenta con plugins de minecraft, en epecial contamos con 3 plugins en trabajo
-	los cuales son SkeldriaMOTD, SkeldriaSB y SkeldriaTAB.
+	los cuales son SkeldriaMOTD, SkeldriaSB y SkeldriaTAB. <i class="fa-solid fa-gamepad"></i>
       </>
     ),
   },
@@ -19,7 +19,7 @@ const FeatureList = [
     description: (
       <>
         SkeldriaX tambien cuenta con 2 bots de discord, en especial contamos con SkeldriaBot
-	y con SkeldriaSecurity.
+	y con SkeldriaSecurity. <i class="fa-brands fa-discord"></i>
       </>
     ),
   },
@@ -29,7 +29,7 @@ const FeatureList = [
     description: (
       <>
         De momento no tenemos patrocinadores, si te gustaría aparecer aquí y patrocinar el projecto
-	puedes ir a la pagina de patrocinios en el menu superior.
+	puedes ir a la pagina de patrocinios en el menu superior. <i class="fa-brands fa-patreon"></i>
       </>
     ),
   },
