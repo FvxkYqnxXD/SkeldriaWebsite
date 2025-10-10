@@ -27,7 +27,7 @@ function HomepageHeader() {
           <Link
             className={clsx('button', styles.heroButton)}
             to="/docs/intro">
-            <i class="fa-solid fa-info"></i> INTRODUCCIÓN
+            <i class="fa-solid fa-circle-info"></i>  INTRODUCCIÓN
           </Link>
         </div>
       </div>
