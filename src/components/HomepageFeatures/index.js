@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+<script src="https://kit.fontawesome.com/8f172169c5.js" crossorigin="anonymous"></script>
 
 const FeatureList = [
   {
