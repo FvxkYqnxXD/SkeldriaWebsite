@@ -5,32 +5,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Plugins de Minecraft',
+    title: 'Plugins de Minecraft <i class="fa-solid fa-gamepad"></i>',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         SkeldriaX cuenta con plugins de minecraft, en epecial contamos con 3 plugins en trabajo
-	los cuales son SkeldriaMOTD, SkeldriaSB y SkeldriaTAB. <i class="fa-solid fa-gamepad"></i>
+	los cuales son SkeldriaMOTD, SkeldriaSB y SkeldriaTAB. 
       </>
     ),
   },
   {
-    title: 'Bots de Discord',
+    title: 'Bots de Discord <i class="fa-brands fa-discord"></i>',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         SkeldriaX tambien cuenta con 2 bots de discord, en especial contamos con SkeldriaBot
-	y con SkeldriaSecurity. <i class="fa-brands fa-discord"></i>
+	y con SkeldriaSecurity.
       </>
     ),
   },
   {
-    title: 'Patrocinios',
+    title: 'Patrocinios <i class="fa-brands fa-patreon"></i>',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         De momento no tenemos patrocinadores, si te gustaría aparecer aquí y patrocinar el projecto
-	puedes ir a la pagina de patrocinios en el menu superior. <i class="fa-brands fa-patreon"></i>
+	puedes ir a la pagina de patrocinios en el menu superior. 
       </>
     ),
   },
