@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+<script src="https://kit.fontawesome.com/8f172169c5.js" crossorigin="anonymous"></script>
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
