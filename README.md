@@ -16,7 +16,7 @@ Copialo:
 ```git clone https://github.com/SkeldriaX/SkeldriaWebsite```
 
 Instalar:
-```npm install && npm tun build```
+```npm install && npm run build```
 
 Iniciar:
 ```npm run serve```
